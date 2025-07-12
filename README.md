@@ -81,4 +81,5 @@ with open("models/rf_random.pkl", "rb") as f:
 y_pred = model.predict(X_test)
 
 ---
+### VISUALISATIONS
 https://github.com/samairaaa3/flight_prediction/blob/main/image3.png
