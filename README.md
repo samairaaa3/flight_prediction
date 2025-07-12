@@ -81,4 +81,4 @@ with open("models/rf_random.pkl", "rb") as f:
 y_pred = model.predict(X_test)
 
 ---
-<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 33 04 PM" src="https://github.com/user-attachments/assets/3d05fdb9-7008-4112-9742-e675bf03b7e4" />
+
