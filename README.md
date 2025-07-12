@@ -1,35 +1,47 @@
 # ✈️ Flight Price Prediction using Random Forest
 
 ## 📌 Overview
+
 This project aims to predict flight ticket prices based on various features such as airline, source, destination, stops, duration, and more.  
-It uses a **Random Forest Regressor**, fine-tuned using **RandomizedSearchCV**, and the final model is saved in a `.pkl` file for future use.
+It uses a **Random Forest Regressor**, fine-tuned using **RandomizedSearchCV**, and the final model is saved as a `.pkl` file for future use.
 
 ---
 
 ## 📊 Dataset
-The dataset used contains historical flight details like:
-- Airline
-- Source & Destination
-- Total Stops
-- Duration
-- Route
-- Additional Info
-- Price (target variable)
 
-> **Note:** Data cleaning and feature engineering were done to convert text-based features into machine-readable format.
+The dataset contains historical flight details, including:
+- Airline  
+- Source & Destination  
+- Total Stops  
+- Duration  
+- Route  
+- Additional Info  
+- **Price** (target variable)
+
+> **Note:** Data cleaning and feature engineering were performed to convert text-based features into machine-readable format.
 
 ---
 
 ## 🧠 Machine Learning Approach
-- **Algorithm:** Random Forest Regressor  
-- **Tuning Method:** RandomizedSearchCV  
+
+- **Model Used:** Random Forest Regressor  
+- **Hyperparameter Tuning:** RandomizedSearchCV  
 - **Train-Test Split:** 80% training, 20% testing  
-- **Evaluation Metric:** R² Score, RMSE
+- **Evaluation Metrics:** R² Score, RMSE
 
 ---
-## 🔧 How to Use
 
-### ▶️ Train the Model
+## 📥 Download the Trained Model
+
+Download the trained Random Forest model from the link below and place it inside the `models/` folder:
+
+👉 [Download rf_random.pkl](https://drive.google.com/file/d/1O7Xz5N0IKYTEWdzc9aS6-IlHq-GpZ1ei/view?usp=share_link)
+
+> **Note:** Make sure to manually download `rf_random.pkl` and place it inside your local `models/` directory before running prediction scripts.
+
+---
+
+## ▶️ Train the Model (Optional)
 ```python
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -46,9 +58,11 @@ rf_model.fit(X_train, y_train)
 with open("models/rf_random.pkl", "wb") as f:
     pickle.dump(rf_model, f)
 ---
+## load and predit
+import pickle
 
-### Download Trained Model
+# Load the model and make predictions
+with open("models/rf_random.pkl", "rb") as f:
+    model = pickle.load(f)
 
-Download the trained Random Forest model from the link below and place it inside the `models/` folder:
-
-👉 [Download rf_random.pkl](https://drive.google.com/your-copied-link-here)
+y_pred = model.predict(X_test)
