@@ -82,4 +82,7 @@ y_pred = model.predict(X_test)
 
 ---
 ### VISUALISATIONS
+
+https://github.com/samairaaa3/flight_prediction/blob/main/Image1.png
+https://github.com/samairaaa3/flight_prediction/blob/main/image2.png
 https://github.com/samairaaa3/flight_prediction/blob/main/image3.png
