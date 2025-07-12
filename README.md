@@ -84,12 +84,13 @@ y_pred = model.predict(X_test)
 ### SOME SCREENSHOTS SHOWING VISUALISATIONS
 1. Departure Time Analysis
 This bar chart visualizes how flights are distributed across different times of the day. Most flights are scheduled for early morning, followed by evening and morning slots.
-<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 32 41 PM" src="https://github.com/user-attachments/assets/5c3a668b-35af-4e25-afd1-cf086f4f7deb" />
+<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 32 41 PM" src="https://github.com/user-attachments/assets/22b7dfc3-2f17-4ce7-80ae-84dfb0cad8b4" />
+
 
 2. Price Distribution & Outliers
 This set of plots displays the distribution of flight prices, including outliers. The boxplot and density plot help identify price range trends and anomalies.
-<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 32 55 PM" src="https://github.com/user-attachments/assets/f647894e-c75f-4a62-af8f-8b124703f29d" />
+<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 32 55 PM" src="https://github.com/user-attachments/assets/ac0e99fa-c149-4405-86cb-75171404ffd9" />
 
 3. Total Stops vs Price
 A scatter plot showing how the number of stops impacts flight prices. Flights with fewer stops (non-stop, 1-stop) generally tend to be more affordable.
-<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 33 04 PM" src="https://github.com/user-attachments/assets/bc3fe5ad-5558-458a-a805-0e0df7fa73d9" />
+<img width="1470" height="956" alt="Screenshot 2025-07-11 at 9 33 04 PM" src="https://github.com/user-attachments/assets/23b2235c-23ff-4754-b923-54c61d6ee7ac" />
