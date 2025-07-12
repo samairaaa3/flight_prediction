@@ -45,3 +45,10 @@ rf_model.fit(X_train, y_train)
 # Save the model
 with open("models/rf_random.pkl", "wb") as f:
     pickle.dump(rf_model, f)
+---
+
+### Download Trained Model
+
+Download the trained Random Forest model from the link below and place it inside the `models/` folder:
+
+👉 [Download rf_random.pkl](https://drive.google.com/your-copied-link-here)
