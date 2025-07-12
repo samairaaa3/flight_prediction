@@ -66,3 +66,16 @@ with open("models/rf_random.pkl", "rb") as f:
     model = pickle.load(f)
 
 y_pred = model.predict(X_test)
+
+
+
+---
+### LOAD AND PREDICT
+import pickle
+
+# Load the model
+with open("models/rf_random.pkl", "rb") as f:
+    model = pickle.load(f)
+
+# Predict on new data
+y_pred = model.predict(X_test)
