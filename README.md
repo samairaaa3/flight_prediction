@@ -1,13 +1,13 @@
-# ✈️ Flight Price Prediction using Random Forest
+#  Flight Price Prediction using Random Forest
 
-## 📌 Overview
+##  Overview
 
 This project aims to predict flight ticket prices based on various features such as airline, source, destination, stops, duration, and more.  
 It uses a **Random Forest Regressor**, fine-tuned using **RandomizedSearchCV**, and the final model is saved as a `.pkl` file for future use.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains historical flight details, including:
 - Airline  
@@ -22,7 +22,7 @@ The dataset contains historical flight details, including:
 
 ---
 
-## 🧠 Machine Learning Approach
+##  Machine Learning Approach
 
 - **Model Used:** Random Forest Regressor  
 - **Hyperparameter Tuning:** RandomizedSearchCV  
@@ -31,17 +31,17 @@ The dataset contains historical flight details, including:
 
 ---
 
-## 📥 Download the Trained Model
+##  Download the Trained Model
 
 Download the trained Random Forest model from the link below and place it inside the `models/` folder:
 
-👉 [Download rf_random.pkl](https://drive.google.com/file/d/1O7Xz5N0IKYTEWdzc9aS6-IlHq-GpZ1ei/view?usp=share_link)
+ [Download rf_random.pkl](https://drive.google.com/file/d/1O7Xz5N0IKYTEWdzc9aS6-IlHq-GpZ1ei/view?usp=share_link)
 
 > **Note:** Make sure to manually download `rf_random.pkl` and place it inside your local `models/` directory before running prediction scripts.
 
 ---
 
-## ▶️ Train the Model (Optional)
+##  Train the Model (Optional)
 ```python
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
